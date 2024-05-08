@@ -32,7 +32,7 @@
             <div class="overlay d-flex justify-content-center align-items-center" :class="isOpen === false ? 'd-none' : 'd-block'">
                 <div class="overlay-container text-white">
                     <span @click="closeModal"><i class="fa-regular fa-circle-xmark"></i></span>
-                    <img :src="disks[currentDisk].poster" class="card-img-top" alt="...">
+                    <img :src="disks[currentDisk].poster" class="card-img-top mb-3" alt="...">
                     <h6 class="card-title"><strong>{{disks[currentDisk].title}}</strong></h6>
                     <p class="card-text">{{disks[currentDisk].author}}</p>
                     <p class="card-text"><strong>{{disks[currentDisk].year}}</strong></p>
