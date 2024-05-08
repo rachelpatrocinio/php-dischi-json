@@ -2,6 +2,11 @@ body{
     background-color: #1E2E3C;
 }
 
+.main-header{
+    background-color: #06131F;
+    height: 80px;
+}
+
 .card{
     background-color: #112030;
 }
