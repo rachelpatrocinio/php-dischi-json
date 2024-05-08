@@ -4,7 +4,8 @@ createApp({
   data() {
     return {
       disks: [],
-      currentDisk: 0
+      currentDisk: 0,
+      isOpen: false
     }
   },
   methods:{
@@ -20,10 +21,11 @@ createApp({
     openCard(i){
         console.log(i);
         this.currentDisk = i
-
-        const overlay = document.querySelector('.overlay');
-        overlay.classList.remove('d-none');
-        overlay.classList.add('d-block');
+         if(this.isOpen === false){
+            this.isOpen = true;
+         } else{
+            this.isOpen = false
+         }
     }
   },
   created(){

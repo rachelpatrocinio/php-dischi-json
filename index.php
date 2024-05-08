@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="overlay d-none">
+            <div class="overlay" :class="isOpen === false ? 'd-none' : 'd-block'">
                 <div class="overlay-container text-white">
                     <h6 class="card-title"><strong>{{disks[currentDisk].title}}</strong></h6>
                     <p class="card-text">{{disks[currentDisk].author}}</p>
