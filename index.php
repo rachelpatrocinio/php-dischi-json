@@ -11,7 +11,13 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        {{ message }}
+        <ul>
+            <li v-for="(disk,i) in disks">
+                <h2>{{disk.title}}</h2>
+                <h5>{{disk.author}}</h5>
+                <h6>{{disk.year}}</h6>
+            </li>
+        </ul>
     </div>
 
     <script src="./js/app.js"></script>
