@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>php-dischi-json</title>
 </head>
 <body>
@@ -14,12 +15,14 @@
         <main>
             <div class="container">
                 <div class="row d-flex flex-wrap">
-                    <div class="card col-4 p-5" v-for="(disk,i) in disks" :key="i">
-                        <img :src="disk.poster" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{disk.title}}</h5>
-                            <p class="card-text">{{disk.author}}</p>
-                            <p class="card-text">{{disk.year}}</p>
+                    <div class="col-4" v-for="(disk,i) in disks" :key="i">
+                        <div class="card p-5 mb-5">
+                            <img :src="disk.poster" class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h6 class="card-title"><strong>{{disk.title}}</strong></h6>
+                                <p class="card-text">{{disk.author}}</p>
+                                <p class="card-text"><strong>{{disk.year}}</strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>
