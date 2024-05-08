@@ -15,22 +15,7 @@ body{
     background-color: #112030;
 }
 
-.main.card:hover{
+.card:hover{
     background-color: #06131F;
     cursor: pointer;
-}
-
-.modal-dialog{
-    background-color: #112030;
-}
-
-.modal .card{
-    border: 0;
-    border-radius: 0;
-}
-
-.modal button{
-    position: absolute;
-    top: 0;
-    right: 0;
 }
