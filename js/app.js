@@ -3,7 +3,8 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      disks: []
+      disks: [],
+      currentDisk: 0
     }
   },
   methods:{
@@ -15,6 +16,14 @@ createApp({
             this.disks = response.data
             console.log(this.disks);
         })
+    },
+    openCard(i){
+        console.log(i);
+        this.currentDisk = i
+
+        const overlay = document.querySelector('.overlay');
+        overlay.classList.remove('d-none');
+        overlay.classList.add('d-block');
     }
   },
   created(){

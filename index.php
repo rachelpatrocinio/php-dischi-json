@@ -15,8 +15,8 @@
         <?php include __DIR__ .'/header.php'?>
         <main class="mt-5 mb-5">
             <div class="container">
-                <div class="row d-flex flex-wrap">
-                    <div class="col-lg-4 col-md-6" v-for="(disk,i) in disks" :key="i">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6" v-for="(disk,i) in disks" :key="i" @click="openCard(i)">
                         <div class="card p-5 mb-5">
                             <img :src="disk.poster" class="card-img-top" alt="...">
                             <div class="card-body text-center text-white">
@@ -26,6 +26,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="overlay d-none">
+                <div class="overlay-container text-white">
+                    <h6 class="card-title"><strong>{{disks[currentDisk].title}}</strong></h6>
+                    <p class="card-text">{{disks[currentDisk].author}}</p>
+                    <p class="card-text"><strong>{{disks[currentDisk].year}}</strong></p>
                 </div>
             </div>
         </main>
