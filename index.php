@@ -28,7 +28,7 @@
                         <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content p-relative">
-                                    <div class="card p-5" @click="openCard(disk)">
+                                    <div class="card p-5">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         <img :src="disk.poster" class="card-img-top" alt="...">
                                         <div class="card-body text-center text-white">
