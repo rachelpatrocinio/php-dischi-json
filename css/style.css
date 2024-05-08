@@ -25,7 +25,18 @@ body{
     right: 0;
     top: 0;
     bottom: 0;
-    height: 100vh;
-    background-color: #1e2e3c9b;
+    background-color: #112030e5;
     position: fixed;
+    margin: 20px;
+}
+
+.overlay img{
+    width: 300px;
+}
+
+.overlay span{
+    position: absolute;
+    font-size: 50px;
+    top: 0;
+    right: 10px;
 }

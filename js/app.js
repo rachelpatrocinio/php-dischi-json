@@ -18,10 +18,17 @@ createApp({
             console.log(this.disks);
         })
     },
-    openCard(i){
+    openModal(i){
         console.log(i);
         this.currentDisk = i
          if(this.isOpen === false){
+            this.isOpen = true;
+         } else{
+            this.isOpen = false
+         }
+    },
+    closeModal(){
+        if(this.isOpen === false){
             this.isOpen = true;
          } else{
             this.isOpen = false
