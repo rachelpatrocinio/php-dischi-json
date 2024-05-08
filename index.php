@@ -16,7 +16,7 @@
         <main class="mt-5 mb-5">
             <div class="container">
                 <div class="row d-flex flex-wrap">
-                    <div class="col-4" v-for="(disk,i) in disks" :key="i">
+                    <div class="col-lg-4 col-md-6" v-for="(disk,i) in disks" :key="i">
                         <div class="card main p-5 mb-5" data-bs-toggle="modal" data-bs-target="#modal">
                             <img :src="disk.poster" class="card-img-top" alt="...">
                             <div class="card-body text-center text-white">
