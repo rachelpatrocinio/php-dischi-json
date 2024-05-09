@@ -21,18 +21,10 @@ createApp({
     openModal(i){
         console.log(i);
         this.currentDisk = i
-         if(this.isOpen === false){
-            this.isOpen = true;
-         } else{
-            this.isOpen = false
-         }
+        this.isOpen = true;
     },
     closeModal(){
-        if(this.isOpen === false){
-            this.isOpen = true;
-         } else{
-            this.isOpen = false
-         }
+        this.isOpen = false
     }
   },
   created(){
